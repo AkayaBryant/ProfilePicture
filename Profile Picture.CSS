@@ -1,0 +1,24 @@
+@mixin object-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  height: 100vh;
+  background-color: tan ;
+  @include object-center;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  color: transparent;
+  transition: all .3s ease;
+  @include object-center;
+
+}
